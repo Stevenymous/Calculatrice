@@ -1,0 +1,34 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <form action="addition.php" method="POST">
+        		<p>Addition</p>
+        		<label for="nb1">Nombre 1</label>
+            <input type="number" name="nb1"/><br/>
+            <label for="nb2">Nombre 2</label>
+            <input type="number" name="nb2"/><br/>
+            <input type="submit" value="Envoyer" />
+        </form>
+        
+        <form action="soustraction.php" method="GET">
+        		<p>Soustraction</p>
+        		<label for="nb1">Nombre 1</label>
+            <input type="number" name="nb1"/><br/>
+            <label for="nb2">Nombre 2</label>
+            <input type="number" name="nb2"/><br/>
+            <input type="submit" value="Envoyer" />
+        </form>
+    </body>
+    
+    
+    
+    
+   <script type="text/javascript" >
+		function addition(){
+			alert(document.getElementsByName("nb1").value);
+		
+		}
+	</script>
+</html>
